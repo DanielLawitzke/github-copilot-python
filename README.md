@@ -58,3 +58,33 @@ Use GitHub Copilot to refactor the code for this game to add more advanced featu
 - The game should be responsive and work well on both desktop and mobile devices.
 - UI colors should be visually appealing and accessible.
 - Completed and correct puzzles should display a congratulatory message with the time taken and hints used and ask for the user's name for Top 10 times.
+
+## Running Tests
+```bash
+cd starter
+python -m pytest tests/ -v
+```
+
+## Project Structure
+```
+starter/
+├── app.py              # Flask routes
+├── sudoku_logic.py     # Puzzle generation and validation
+├── requirements.txt    # Python dependencies
+├── pyproject.toml      # Black and pytest configuration
+├── templates/
+│   └── index.html      # Game UI
+├── static/
+│   ├── styles.css      # Styling
+│   └── main.js         # Frontend logic
+└── tests/
+    ├── conftest.py     # pytest fixtures
+    └── test_sudoku.py  # Test suite
+
+.github/
+└── prompts/            # Copilot prompt templates
+```
+
+## Windows Notes
+- Use `python` instead of `python3`
+- Activate venv with `.venv\Scripts\activate.bat`
